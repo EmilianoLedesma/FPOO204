@@ -3,8 +3,6 @@ import java.util.Scanner;
 
 public class sumatoria_int {
 
-    /*Escribir un programa que solicite un entero X, introducido por el usuario y
-después muestre en pantalla la suma de todos los enteros desde 1 hasta X . */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Introduce un numero entero: ");
