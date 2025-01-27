@@ -9,7 +9,7 @@ public class jugueteria {
         int numPayasos = scanner.nextInt();
 
         System.out.print("Ingrese el número de muñecas vendidas: ");
-        int numMunecas = scanner.nextInt();
+        int numMuñecas = scanner.nextInt();
 
         int pesoPayaso = 112; 
         int pesoMuñeca = 75;
