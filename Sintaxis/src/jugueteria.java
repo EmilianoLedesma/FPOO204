@@ -12,9 +12,9 @@ public class jugueteria {
         int numMunecas = scanner.nextInt();
 
         int pesoPayaso = 112; 
-        int pesoMuneca = 75;
+        int pesoMuñeca = 75;
 
-        int pesoTotal = (numPayasos * pesoPayaso) + (numMunecas * pesoMuneca);
+        int pesoTotal = (numPayasos * pesoPayaso) + (numMuñecas * pesoMuñeca);
 
         System.out.println("El peso total del paquete es: " + pesoTotal + " gramos");
     }
