@@ -36,9 +36,13 @@ public class impresion_nombres {
         ap1mix = ap1.substring(0, 1).toUpperCase() + ap1.substring(1).toLowerCase();
         ap2mix = ap2.substring(0, 1).toUpperCase() + ap2.substring(1).toLowerCase();
 
+        char ape1 = ap1.charAt(0);
+        char ape2 = ap2.charAt(0);
+        char nom = nombre.charAt(0);
+
         System.out.println(nombremayus + " " + ap1mayus + " " + ap2mayus);
         System.out.println(nombreminus + " " + ap2minus + " " + ap2minus);
-        System.out.println(nombremix + " " + ap1mix + " " + ap2mix);
+        System.out.println(nom + " " + ape1 + " " + ape2);
 
     }
 }
