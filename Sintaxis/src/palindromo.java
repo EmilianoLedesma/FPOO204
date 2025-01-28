@@ -4,10 +4,9 @@ import java.util.Scanner;
 public class palindromo {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese una cadena de caracteres:");
-        String input = scanner.nextLine();
-        scanner.close();
+        String input = sc.nextLine();
 
         if (esPalindromo(input)) {
             System.out.println("La cadena " + input + " es un palíndromo.");
