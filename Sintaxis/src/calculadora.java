@@ -35,11 +35,11 @@ public class calculadora {
                     resultado = num1 / num2;
                     System.out.println("El resultado es: " + resultado);
                 } else {
-                    System.out.println("Error: División por cero.");
+                    System.out.println("Error");
                 }
                 break;
             default:
-                System.out.println("Error: Operador no válido.");
+                System.out.println("Error");
                 break;
         }
 
