@@ -20,26 +20,26 @@ public class calculadora {
         switch (operador) {
             case '1':
                 resultado = num1 + num2;
-                System.out.println("El resultado de la operacion suma es: " + resultado);
+                System.out.println("El resultado de la operación suma es: " + resultado);
                 break;
             case '2':
                 resultado = num1 - num2;
-                System.out.println("El resultado de la operacion resta es: " + resultado);
+                System.out.println("El resultado de la operación resta es: " + resultado);
                 break;
             case '3':
                 resultado = num1 * num2;
-                System.out.println("El resultado de la operacion multiplicacion es: " + resultado);
+                System.out.println("El resultado de la operación multiplicación es: " + resultado);
                 break;
             case '4':
                 if (num2 != 0) {
                     resultado = num1 / num2;
-                    System.out.println("El resultado de la operacion division es: " + resultado);
+                    System.out.println("El resultado de la operación división es: " + resultado);
                 } else {
                     System.out.println("Error: no se puede dividir entre 0");
                 }
                 break;
             default:
-                System.out.println("Error: opcion ingresada invalida");
+                System.out.println("Error: opcion ingresada inválida");
                 break;
         }
 
