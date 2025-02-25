@@ -1,11 +1,10 @@
-
 public class Cuenta {
-
     private String numeroCuenta;
     private String titular;
     private int edad;
     private double saldo;
 
+    // Constructor completo
     public Cuenta(String numeroCuenta, String titular, int edad, double saldo) {
         this.numeroCuenta = numeroCuenta;
         this.titular = titular;
@@ -13,6 +12,12 @@ public class Cuenta {
         this.saldo = saldo;
     }
 
+    // Constructor sin saldo inicial
+    public Cuenta(String numeroCuenta, String titular, int edad) {
+        this(numeroCuenta, titular, edad, 0.0);
+    }
+
+    // Métodos encapsulados
     public double consultarSaldo() {
         return saldo;
     }
@@ -36,6 +41,7 @@ public class Cuenta {
         }
     }
 
+    // Getters y setters
     public String getTitular() {
         return titular;
     }
