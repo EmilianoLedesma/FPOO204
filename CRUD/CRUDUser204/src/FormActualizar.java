@@ -25,9 +25,7 @@ public class FormActualizar extends javax.swing.JFrame {
     txtContrasena.setText(contrasena);
     txtCorreo.setText(correo);
 }
-    public FormActualizar() {
-        initComponents();
-    }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
