@@ -38,6 +38,23 @@ public class UserCRUD {
         
     }//Fin del insert
     
+    public boolean ActualizarUsuario(int id, String nombre, String contrasena, String correo){
+        String updateSQL = "UPDATE usuarios SET nombre = ?, contrasena = ?, correo = ? WHERE id = ?";
+        
+        try{
+            PreparedStatement ps = conexion.prepareStatement(updateSQL);
+            ps.setString(1, nombre);
+            ps.setString(2, contrasena);
+            ps.setString(3, correo);
+            ps.setInt(4,id);
+            return ps.executeUpdate() > 0;
+        }
+        catch(SQLException e){
+            System.out.println("Error al actualizar el usuario " + e.getMessage());
+            return false;
+        }
+    }//Fin del actualizar
+    
     //Metodo para consultar por ID
     public ResultSet BuscarPorID(int id){
         String sqlBuscar= "Select *  from usuarios where id = ?";

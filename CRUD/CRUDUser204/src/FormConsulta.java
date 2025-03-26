@@ -40,7 +40,7 @@ public class FormConsulta extends javax.swing.JFrame {
         txtId = new javax.swing.JTextField();
         btnBuscar = new javax.swing.JButton();
         btnTodos = new javax.swing.JButton();
-        btnLimpiar = new javax.swing.JButton();
+        btnActualizar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -83,10 +83,10 @@ public class FormConsulta extends javax.swing.JFrame {
             }
         });
 
-        btnLimpiar.setText("Limpiar la tabla");
-        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
+        btnActualizar.setText("Actualizar Datos");
+        btnActualizar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnLimpiarActionPerformed(evt);
+                btnActualizarActionPerformed(evt);
             }
         });
 
@@ -114,7 +114,7 @@ public class FormConsulta extends javax.swing.JFrame {
                         .addGap(133, 133, 133)
                         .addComponent(btnTodos, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(btnLimpiar)))
+                        .addComponent(btnActualizar)))
                 .addContainerGap(204, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(18, 18, 18)
@@ -138,7 +138,7 @@ public class FormConsulta extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnTodos, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnLimpiar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnActualizar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(1, 1, 1)))
                 .addGap(60, 60, 60))
         );
@@ -193,9 +193,18 @@ public class FormConsulta extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnTodosActionPerformed
 
-    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnLimpiarActionPerformed
+    private void btnActualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarActionPerformed
+        int filaSeleccionada = jTable1.getSelectedRow();
+    
+        // Obtener el ID de la fila seleccionada (primera columna)
+        int id = (int) jTable1.getValueAt(filaSeleccionada, 0);
+        String nombre = (String) jTable1.getValueAt(filaSeleccionada, 1);
+        String contrasena = (String) jTable1.getValueAt(filaSeleccionada, 2);
+        String correo = (String) jTable1.getValueAt(filaSeleccionada, 3);
+    
+        FormActualizar FA = new FormActualizar(id, nombre, contrasena, correo);
+        FA.setVisible(true);
+    }//GEN-LAST:event_btnActualizarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -234,8 +243,8 @@ public class FormConsulta extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Titulo;
+    private javax.swing.JButton btnActualizar;
     private javax.swing.JButton btnBuscar;
-    private javax.swing.JButton btnLimpiar;
     private javax.swing.JButton btnTodos;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;

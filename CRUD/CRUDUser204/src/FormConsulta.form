@@ -48,7 +48,7 @@
                       <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
                       <Component id="btnTodos" min="-2" pref="124" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="btnLimpiar" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnActualizar" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="204" max="32767" attributes="0"/>
@@ -78,7 +78,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="btnTodos" min="-2" pref="42" max="-2" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <Component id="btnLimpiar" max="32767" attributes="0"/>
+                      <Component id="btnActualizar" max="32767" attributes="0"/>
                       <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -176,12 +176,12 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTodosActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnLimpiar">
+    <Component class="javax.swing.JButton" name="btnActualizar">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Limpiar la tabla"/>
+        <Property name="text" type="java.lang.String" value="Actualizar Datos"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLimpiarActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnActualizarActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
