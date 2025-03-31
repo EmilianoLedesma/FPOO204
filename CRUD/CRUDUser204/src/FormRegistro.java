@@ -1,4 +1,4 @@
-
+    
 import java.sql.Connection;
 import javax.swing.JOptionPane;
 public class FormRegistro extends javax.swing.JFrame {
