@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="CRUDUser204">
+  <ClassDiagramComponents>
+    <Class name="ConexionMySQL" package="" visibility="public" xPosition="968.0" yPosition="1191.0">
+      <Fields>
+        <Field name="URL" type="String" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="USUARIO" type="String" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="CONTRASENA" type="String" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="conectar" returnType="Connection" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="FormActualizar" package="" visibility="public" xPosition="280.0" yPosition="418.0">
+      <Fields>
+        <Field name="usuarioId" type="int" visibility="private"/>
+        <Field name="btnActualizar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="txtContrasena" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txtCorreo" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txtNombre" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="contrasena"/>
+          <Argument type="String" name="correo"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="txtNombreActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnActualizarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FormConsulta" package="" visibility="public" xPosition="739.0" yPosition="418.0">
+      <Fields>
+        <Field name="crud" type="UserCRUD" visibility="private"/>
+        <Field name="Titulo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="btnActualizar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnBuscar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnTodos" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jSeparator1" type="javax.swing.JSeparator" visibility="private"/>
+        <Field name="jTable1" type="javax.swing.JTable" visibility="private"/>
+        <Field name="txtId" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="txtIdActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnBuscarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnTodosActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnActualizarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FormEliminar" package="" visibility="public" xPosition="1151.0" yPosition="418.0">
+      <Fields>
+        <Field name="crud" type="UserCRUD" visibility="private"/>
+        <Field name="btnBuscar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnEliminar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTable1" type="javax.swing.JTable" visibility="private"/>
+        <Field name="txtId" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="txtIdActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnBuscarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnEliminarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FormRegistro" package="" visibility="public" xPosition="1556.0" yPosition="418.0">
+      <Fields>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="txtContrasena" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txtCorreo" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txtNombre" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="VerificarConexion" returnType="void" visibility="public"/>
+        <Method name="txtNombreActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="txtContrasenaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="txtCorreoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="limpiarcampos" returnType="void" visibility="private"/>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Menu" package="" visibility="public" xPosition="739.0" yPosition="-4.0">
+      <Fields>
+        <Field name="btnActualizar" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="btnConsulta" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="btnEliminar" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="btnRegistro" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenu1" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenuBar1" type="javax.swing.JMenuBar" visibility="private"/>
+        <Field name="jMenuItem1" type="javax.swing.JMenuItem" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="btnRegistroActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnActualizarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnEliminarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnConsultaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="UserCRUD" package="" visibility="public" xPosition="832.0" yPosition="911.0">
+      <Fields>
+        <Field name="conexion" type="Connection" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="InsertUsuario" returnType="boolean" visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="contrasena"/>
+          <Argument type="String" name="correo"/>
+        </Method>
+        <Method name="ActualizarUsuario" returnType="boolean" visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="contrasena"/>
+          <Argument type="String" name="correo"/>
+        </Method>
+        <Method name="BuscarPorID" returnType="ResultSet" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="obtenerTodos" returnType="ResultSet" visibility="public"/>
+        <Method name="EliminarUsuario" returnType="boolean" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="s" source="Menu" target="FormRegistro" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="s" source="Menu" target="FormEliminar" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="s" source="Menu" target="FormConsulta" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="s" source="FormRegistro" target="UserCRUD" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="s" source="UserCRUD" target="ConexionMySQL" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="s" source="FormActualizar" target="UserCRUD" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="s" source="Menu" target="FormActualizar" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="s" source="FormConsulta" target="UserCRUD" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="s" source="FormEliminar" target="UserCRUD" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

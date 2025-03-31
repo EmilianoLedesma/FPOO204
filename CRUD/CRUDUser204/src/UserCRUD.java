@@ -92,6 +92,6 @@ public class UserCRUD {
     } catch (SQLException e) {
         System.out.println("Error al eliminar el usuario " + e.getMessage());
         return false;
-    }
+        }
     }
 }
